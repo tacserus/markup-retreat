@@ -1,1 +1,18 @@
-/* Пиши стили тут */
+.stars {
+    border: 0;
+    display: flex;
+    box-sizing: border-box;
+}
+
+.stars img {
+    width: 100px;
+    height: 100px;
+}
+
+.stars:hover img {
+    content: url("img/star.png");
+}
+
+.stars img:hover ~ img {
+    content: url("img/star-empty.png");
+}
